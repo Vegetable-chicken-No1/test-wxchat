@@ -1,0 +1,18 @@
+<view>
+  <view class="tj">{{mz}}</view>
+     <!-- 推荐视频的盒子 -->
+    <block wx:for='{{fjarr}}' wx:key='*this'>
+      <view class="box" bindtap="videoxq" data-id="{{item.qb}}">
+      <view class="box-img">
+        <image src="{{item.fjurl}}"></image>
+      </view>
+      <text class="box-tit">{{item.fjdes}}</text>
+      <view class="box-dz">
+          <image src="{{item.fjbf}}"/>
+          <text>{{item.bfsum}}</text>
+          <image src="{{item.fjdz}}"/>
+          <text>{{item.dzsum}}</text>
+        </view>
+    </view>
+    </block>
+</view>

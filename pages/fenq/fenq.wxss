@@ -1,0 +1,28 @@
+.flexbox{
+  display: flex;
+  flex-flow: row wrap;
+}
+.smallbox{
+  margin-top: 30rpx;
+  flex-basis: 20%;
+  height: 120rpx;
+  margin-left: 5%;
+  position: relative;
+}
+.smallbox:hover>text{
+  color: rgba(0, 162, 255, 0.808)
+}
+.smallbox>image{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70rpx;
+  height: 70rpx;
+}
+.smallbox>text{
+  font-size: 11px;
+  position: absolute;
+  left: 10%;
+  bottom: 20rpx;
+  color: grey;
+}

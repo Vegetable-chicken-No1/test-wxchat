@@ -1,0 +1,63 @@
+.nav-bar{
+  position: relative;
+  height: 80rpx;
+  border-bottom: solid 2rpx pink
+}
+/* logo */
+.logo{
+ position: absolute;
+  left: 40rpx;
+  top:0;
+}
+.logo>image{
+  width: 150rpx;
+  height: 60rpx;
+}
+/* 搜索图片 */
+.search{
+ position: absolute;
+  right: 30rpx;
+  top:10rpx;
+}
+.bili-icon-search>image{
+  width: 60rpx;
+  height: 30rpx;
+}
+navigator{
+  float: left;
+}
+/* 中间文字 */
+.bili-icon-history{
+  position: absolute;
+  left: 45%;
+  top:0;
+  width: 200rpx;
+  line-height: 60rpx;
+}
+.bili-icon-history>text{
+  color: rgba(255, 192, 231, 0.747)
+}
+/* 导航栏 */
+.main{
+  margin-top: 20rpx;
+  padding-bottom:1rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border-bottom: solid rgba(128, 128, 128, 0.219) 2rpx;
+}
+.on{
+  color: #de698c;
+  border-bottom: solid #de698c 4rpx;
+}
+.li{
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.li>navigator{
+  text-align: center;
+  line-height: 60rpx;
+  width: 100%;
+  height: 100%;
+}

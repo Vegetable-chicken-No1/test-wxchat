@@ -1,0 +1,56 @@
+{
+  "usingComponents": {
+    "van-button": "./miniprogram_npm/@vant/weapp/button",
+    "van-notice-bar": "./miniprogram_npm/@vant/weapp/notice-bar/index"
+  },
+  "pages": [
+    "pages/index2/enter",
+    "pages/videoxq/videoxq",
+    "pages/mine/mine",
+    "pages/zbo/zbo",
+    "pages/fenq/fenq",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/fqym/fqym"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#920031",
+    "borderStyle": "black",
+    "backgroundColor": "#de698c",
+    "list": [
+      {
+        "selectedIconPath": "./images/tuijian1.png",
+        "iconPath": "./images/tuijian1.png",
+        "pagePath": "pages/index2/enter",
+        "text": "推荐"
+      },
+      {
+        "selectedIconPath": "./images/fenlie.png",
+        "iconPath": "./images/fenlie.png",
+        "pagePath": "pages/fenq/fenq",
+        "text": "分区"
+      },
+      {
+        "selectedIconPath": "./images/zhibo.png",
+        "iconPath": "./images/zhibo.png",
+        "pagePath": "pages/zbo/zbo",
+        "text": "直播"
+      },
+      {
+        "selectedIconPath": "./images/avatar.png",
+        "iconPath": "./images/avatar.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

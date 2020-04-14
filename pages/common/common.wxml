@@ -1,0 +1,42 @@
+<!-- 首页页头 -->
+<template  name="header">
+<view class="nav-bar">
+        <!-- LOGO -->
+        <navigator class="logo" url="/pages/index/index" >
+          <image src="../../images/logo.png"></image>
+        </navigator>
+        <!-- 中间文字 -->
+        <navigator class="cell" url="/pages/index/index">
+            <view class="nav-icon bili-icon-history">
+                <text>巴拉巴拉</text>
+            </view>
+        </navigator>
+        <!-- 搜索框 -->
+        <view class="search">
+            <view class="nav-icon bili-icon-search">
+              <image src="../../images/sousuo.png"></image>
+            </view>
+        </view>
+</view>
+</template>
+
+<!-- 导航菜单-begin -->
+<template name="daohang">
+  <view class="flex-bar main">
+        <view class="li nav-item">
+            <navigator url="/pages/" hover-class="on">推荐</navigator>
+        </view>
+        <view class="li nav-item">
+            <navigator url="/pages/" >分区</navigator>
+        </view>
+        <view class="li nav-item">
+            <navigator url="/pages/">直播</navigator>
+        </view>
+        <view class="li nav-item">
+            <navigator url="/pages/">我的</navigator>
+        </view>
+    </view>
+</template>
+
+  <!-- 导航菜单-end -->
+

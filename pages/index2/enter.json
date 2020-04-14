@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#de698c",
+  "navigationBarTitleText": "推荐",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true ,
+  "backgroundTextStyle": "dark"
+}

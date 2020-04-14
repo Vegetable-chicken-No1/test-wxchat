@@ -1,0 +1,23 @@
+
+<view class="mine_flex">
+  <view class="no_img">
+    <image src="{{img}}"></image>
+  </view>
+  <text class="xm">{{dlxm}}</text>
+  <!-- 获取授权 -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称      </button>
+  </view>
+  <!-- 最后 -->
+  <view class="end">
+    <view class="end_one">
+      <text>本来这里需要写啥的</text>
+      <text>但是></text>
+    </view>
+    <view class="end_two">
+      <text>我不知道啥！</text>
+      <text>憨憨></text>
+    </view>
+  </view>
+</view>
+

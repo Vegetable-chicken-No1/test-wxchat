@@ -1,0 +1,10 @@
+<view class="flexbox">
+
+<block wx:for='{{fenqarr}}' wx:key='*this'>
+ <view class="smallbox" bindtap="upfq"  data-id="{{item.fqid}}">
+    <image src="{{item.fqurl}}"></image>
+    <text>{{item.fenqtext}}</text>
+  </view>
+</block>
+ 
+</view>

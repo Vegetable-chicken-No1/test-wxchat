@@ -1,0 +1,43 @@
+<view class="flexbox">
+  <video id="myvideo" bindplay='playVideo' autoplay='true' src="{{path}}" bindfullscreenchange="fullScreen"  bindended="closeVideo"  controls poster="" >
+  </video> 
+  <!-- 简介 -->
+  <view class="ms">
+   <!-- 动态切换样式 -->
+    <view class='{{num==1?"active":""}}' data-num='1' bindtap="change">
+      简介
+    </view>
+    <view class='{{num==2?"active":""}}' data-num='2' bindtap="change">
+      评论
+    </view>
+  </view>
+  <!-- 简介 -->
+  <view class="des">
+    <text>{{videodes}}</text>
+    <text class="des_small">{{gk}}</text>
+    <text class="des_small">{{dz}}</text>
+    <text class="des_small">{{time}}</text>
+  </view>
+  <!-- 推荐视频 -->
+  <view>
+    <view class="tj">推荐视频</view>
+    <!-- 推荐视频的盒子 -->
+    <block wx:for='{{tjsparr}}' wx:key='*this'>
+      <view class="box" bindtap="videoxq" data-id="{{item.qb}}">
+      <view class="box-img">
+        <image src="{{item.spurl}}"></image>
+      </view>
+      <text class="box-tit">{{item.spdes}}</text>
+      <view class="box-dz">
+          <image src="{{item.spbf}}"/>
+          <text>{{item.bfsum}}</text>
+          <image src="{{item.spdz}}"/>
+          <text>{{item.dzsum}}</text>
+        </view>
+    </view>
+    </block>
+    
+
+  </view>
+
+</view>
